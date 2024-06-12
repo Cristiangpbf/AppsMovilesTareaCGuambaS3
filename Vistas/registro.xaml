@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="cguambaS3.Vistas.registro"
+             Title="REGISTRO">
+    <VerticalStackLayout
+        Spacing="20"
+        Padding="20">
+        <Label 
+            Text="VENTANA DE REGISTRO!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="20"/>
+
+        <Entry
+            x:Name="txtUsuario"
+            Placeholder="Ingrese el usuario"/>
+
+        <Entry
+            x:Name="txtPassword"
+            Placeholder="Ingrese una contraseña"
+            IsPassword="True"/>
+
+        <Entry
+            x:Name="txtPasswordConf"
+            Placeholder="Confirme la contraseña"
+            IsPassword="True"/>
+
+        <Button 
+            x:Name="btnRegistrarUsuario"
+            Text="Registrar nuevo usuario"
+            Clicked="btnRegistrarUsuario_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
